@@ -7,7 +7,9 @@ USE UG;
 CREATE TABLE PERSONS (
                          ID INT AUTO_INCREMENT PRIMARY KEY,
                          FIRST_NAME VARCHAR(50) NOT NULL,
-                         LAST_NAME VARCHAR(50) NOT NULL
+                         LAST_NAME VARCHAR(50) NOT NULL,
+                         BIRTH_DATE DATE NULL,
+                         CREATE_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 INSERT INTO PERSONS (FIRST_NAME, LAST_NAME) VALUES ('John', 'Doe');
